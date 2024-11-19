@@ -1,5 +1,9 @@
 name: Release to GitHub Packages
 
+permissions:
+  contents: write
+  id-token: write
+
 on:
   push:
     branches:
