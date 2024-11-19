@@ -1,7 +1,6 @@
 {
   "name": "@renartupits/r5k-vuelib",
   "version": "0.0.0",
-  "private": true,
   "type": "module",
   "repository": {
     "type": "git",
