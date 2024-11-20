@@ -1,11 +1,11 @@
 {
   "name": "@renartupits/r5k-vuelib",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "private": false,
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/renartupits/r5k-vuelib.git"
-  },
+  "main": "dist/r5k-vuelib.cjs",
+  "module": "dist/r5k-vuelib.js",
+  "files": ["dist"],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -23,7 +23,6 @@
     "radix-vue": "^1.9.9",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "tsup": "^8.3.5",
     "vue": "^3.5.12"
   },
   "devDependencies": {

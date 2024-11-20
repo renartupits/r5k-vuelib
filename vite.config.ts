@@ -19,13 +19,18 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: 'src/main.ts',
+      entry: 'src/index.ts',
       name: 'r5kvuelib',
-      fileName: 'r5k-vue-lib',
-      formats: ['es']
+      fileName: 'r5k-vuelib',
+      formats: ['es', 'cjs', 'umd'], // Output formats
     },
     rollupOptions: {
-      external: ['vue']
+      external: ['vue'], // Do not bundle Vue to avoid conflicts
+      output: {
+        globals: {
+          vue: 'Vue', // Vue global variable for UMD builds
+        },
+      }
     }
   }
 })
